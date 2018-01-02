@@ -12,10 +12,11 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/
     }, {
-      test: /\.css$/,
+      test: /\.scss$/,
       use: [
-        'styler-loader',
-        'css-loader'
+        'style-loader',
+        'css-loader',
+        'sass-loader'
       ]
     }]
   },
